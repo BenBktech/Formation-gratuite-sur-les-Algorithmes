@@ -1,4 +1,4 @@
-# Formation en Algorithmique avec JavaScript
+# Formation sur les Algorithmes avec JavaScript
 
 Bienvenue à cette formation complète en algorithmique avec JavaScript. Cette formation est divisée en plusieurs modules, chacun se concentrant sur un aspect fondamental des structures de données et des algorithmes.
 
