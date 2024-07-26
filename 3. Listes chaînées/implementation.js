@@ -104,7 +104,7 @@ class LinkedList {
         // Une fois qu'on a récupérer le (noeud à supprimer - 1)
         // Si ce noeud a un noeud après lui
         if (current.next) {
-            // Alors va supprimer le noeud après lui en disant que pour le noeud actuel son prochain ne sera pas le prochain mais le prochain du prochain
+            // Alors on va supprimer le noeud après lui en disant que pour le noeud actuel son prochain ne sera pas le prochain mais le prochain du prochain
             current.next = current.next.next;
             // Et si on arrive au dernier noeud, on le met dans this.tail
             if (!current.next) {
