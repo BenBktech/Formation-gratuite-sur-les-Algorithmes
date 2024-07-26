@@ -1,4 +1,8 @@
 class TableDeHashage {
+    /*
+    Complexité Temporelle : O(1) : Initialiser un tableau vide et définir la taille sont des opérations constantes.
+    Complexité Spatiale : O(n) : La mémoire allouée pour la table est proportionnelle à la taille spécifiée lors de la création de la table.
+    */
     constructor(size = 7) {
         this.table = new Array(size);
         this.size = 0;
@@ -35,6 +39,11 @@ class TableDeHashage {
     La clé "cat" sera donc stockée à l'index 23 dans le tableau de la table de hashage.
     */
     /* La fonction de hachage _hash prend une clé (généralement une chaîne de caractères) et calcule un index dans le tableau de la table de hashage. Cet index est ensuite utilisé pour stocker et accéder aux paires clé-valeur dans la table de hashage. */
+    
+    /*
+    Complexité Temporelle : O(k) : La complexité est proportionnelle à la longueur de la clé, où k est le nombre de caractères dans la clé.
+    Complexité Spatiale : O(1) : Utilise un espace constant pour la variable de hachage et les opérations intermédiaires.
+    */
     _hash(key) {
         // On initialise une variable hash à 0. Cette variable sera utilisée pour accumuler le résultat du calcul de hachage.
         let hash = 0;
@@ -94,6 +103,10 @@ class TableDeHashage {
         this.size++;
     */
 
+    /*
+    Complexité Temporelle : O(1) en moyenne, O(n) dans le pire des cas : En moyenne, l'insertion dans une table de hashage est une opération constante. Cependant, dans le pire des cas (tous les éléments provoquent des collisions), la complexité peut devenir linéaire par rapport à la taille de la table.
+    Complexité Spatiale : O(1) par opération : Chaque insertion utilise un espace constant pour stocker la paire clé-valeur.
+    */
     set(key, value) {
         // Utilise la fonction de hachage _hash pour calculer l'index pour la clé donnée.
         // L'index est une position dans le tableau où la paire clé-valeur sera potentiellement stockée.
@@ -160,6 +173,11 @@ class TableDeHashage {
         Retourner undefined :
         return undefined;
 
+    */
+
+    /*
+    Complexité Temporelle : O(1) en moyenne, O(n) dans le pire des cas : En moyenne, la recherche dans une table de hashage est une opération constante. Cependant, dans le pire des cas (beaucoup de collisions), la complexité peut devenir linéaire par rapport à la taille de la table.
+    Complexité Spatiale : O(1) : Utilise un espace constant pour les variables intermédiaires.
     */
     get(key) {
         // Utilise la fonction de hachage _hash pour calculer l'index pour la clé donnée.
