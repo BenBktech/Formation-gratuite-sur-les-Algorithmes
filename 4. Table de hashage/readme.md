@@ -17,9 +17,9 @@ _hash(key) {
 ```
 
 **Opérations de Base :**
-- set(key, value): Ajouter ou mettre à jour une paire clé-valeur.
-- get(key): Récupérer la valeur associée à une clé.
-- _hash(key): Calculer l'index pour une clé donnée.
+- **set(key, value) :** Ajouter ou mettre à jour une paire clé-valeur.
+- **get(key) :** Récupérer la valeur associée à une clé.
+- **_hash(key) :** Calculer l'index pour une clé donnée.
 
 **Applications Courantes :**
 - **Dictionnaires et Indexation :** Les tables de hashage sont souvent utilisées pour implémenter des dictionnaires où les clés sont des mots et les valeurs sont leurs définitions ou fréquences.
