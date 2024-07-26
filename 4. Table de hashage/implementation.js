@@ -8,6 +8,8 @@ class TableDeHashage {
     Exemple
     Prenons un exemple pour illustrer le fonctionnement de cette fonction de hachage.
 
+    Taille tableau = 53
+
     Clé : "cat"
 
     Initialisation :
