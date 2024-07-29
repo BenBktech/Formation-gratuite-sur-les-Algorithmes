@@ -24,7 +24,7 @@ class BinarySearch {
     }
 }
 
-const sortedArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const target = 7;
+const sortedArray = [11, 28, 31, 47, 55, 61, 77, 82, 94, 100];
+const target = 77;
 const result = BinarySearch.search(sortedArray, target);
 console.log(result); // Affiche l'index de l'élément cible ou -1 si non trouvé

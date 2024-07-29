@@ -34,24 +34,30 @@
 **Attention :** left, right & mid désignent un index dans le tableau et non une valeur !
 
 ```
-Initial Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-Target: 7
+Initial Array: [11, 28, 31, 47, 55, 61, 77, 82, 94, 100]
+Target: 77
 
 Step 1:
 left = 0, right = 9, mid = 4
-Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-                    ^
+Array: [11, 28, 31, 47, 55, 61, 77, 82, 94, 100]
+                        ^
 Target > mid, move right
 
 Step 2:
 left = 5, right = 9, mid = 7
-Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-                             ^
+Array: [11, 28, 31, 47, 55, 61, 77, 82, 94, 100]
+                                    ^
 Target < mid, move left
 
 Step 3:
 left = 5, right = 6, mid = 5
-Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-                          ^
+Array: [11, 28, 31, 47, 55, 61, 77, 82, 94, 100]
+                            ^
+Target > mid, move right
+
+Step 4:
+left = 6, right = 6, mid = 6
+Array: [11, 28, 31, 47, 55, 61, 77, 82, 94, 100]
+                                ^
 Target = mid, found target at index 6
 ```
