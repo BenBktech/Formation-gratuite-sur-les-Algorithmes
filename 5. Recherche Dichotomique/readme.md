@@ -28,3 +28,28 @@
 - Systèmes de Fichiers : Les systèmes de fichiers peuvent utiliser la recherche dichotomique pour localiser rapidement des fichiers dans un répertoire trié.
 
 - Jeux et Simulation : Utilisée pour la recherche rapide d'objets ou d'entités dans des jeux et des simulations où les données sont triées.
+
+## Diagramme
+
+```
+Initial Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Target: 7
+
+Step 1:
+left = 0, right = 9, mid = 4
+Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                   ^
+Target > mid, move right
+
+Step 2:
+left = 5, right = 9, mid = 7
+Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                               ^
+Target < mid, move left
+
+Step 3:
+left = 5, right = 6, mid = 5
+Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                         ^
+Target = mid, found target at index 6
+```
