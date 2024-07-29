@@ -39,35 +39,35 @@ console.log(fact(5)); // Affiche 120
 
 ##### Appel initial :
 
-- fact(5) est appelé.
+- ```fact(5)``` est appelé.
 - Le programme vérifie si ```n === 0```. Ce n'est pas le cas, donc il passe à ```return 5 * fact(4)```.
 
 
 ##### Premier appel récursif :
 
-- fact(4) est appelé.
-- Le programme vérifie si n === 0. Ce n'est pas le cas, donc il passe à return 4 * fact(3).
+- ```fact(4)``` est appelé.
+- Le programme vérifie si ```n === 0```. Ce n'est pas le cas, donc il passe à ```return 4 * fact(3)```.
 
 
 ##### Deuxième appel récursif :
 
-- fact(3) est appelé.
-- Le programme vérifie si n === 0. Ce n'est pas le cas, donc il passe à return 3 * fact(2).
+- ```fact(3)``` est appelé.
+- Le programme vérifie si ```n === 0```. Ce n'est pas le cas, donc il passe à ```return 3 * fact(2)```.
 
 
 ##### Troisième appel récursif :
 
-- fact(2) est appelé.
-- Le programme vérifie si n === 0. Ce n'est pas le cas, donc il passe à return 2 * fact(1).
+- ```fact(2)``` est appelé.
+- Le programme vérifie si ```n === 0```. Ce n'est pas le cas, donc il passe à ```return 2 * fact(1)```.
 
 
 ##### Quatrième appel récursif :
 
-- fact(1) est appelé.
-- Le programme vérifie si n === 0. Ce n'est pas le cas, donc il passe à return 1 * fact(0).
+- ```fact(1)``` est appelé.
+- Le programme vérifie si ```n === 0```. Ce n'est pas le cas, donc il passe à ```return 1 * fact(0)```.
 
 
 ##### Cas de base :
 
-- fact(0) est appelé.
-- Le programme vérifie si n === 0. C'est vrai, donc il retourne 1.
+- ```fact(0)``` est appelé.
+- Le programme vérifie si ```n === 0```. C'est vrai, donc il retourne ```1```.
