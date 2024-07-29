@@ -17,7 +17,7 @@
 - Liste Triée : La recherche dichotomique ne fonctionne que sur une liste triée. Si la liste n'est pas triée, l'algorithme doit d'abord trier la liste, ce qui peut affecter l'efficacité globale.
 - Accessibilité Aléatoire : L'algorithme suppose un accès direct aux éléments de la liste, ce qui est typiquement le cas avec les tableaux ou les listes dynamiques.
 
-**Applications Courantes :**
+## Applications Courantes
 
 - Recherche dans les Bases de Données : La recherche dichotomique est utilisée pour effectuer des requêtes de recherche rapide sur des tables triées. Par exemple, trouver un enregistrement spécifique dans une base de données triée par identifiant.
 
