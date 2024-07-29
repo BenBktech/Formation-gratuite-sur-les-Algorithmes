@@ -71,3 +71,66 @@ console.log(fact(5)); // Affiche 120
 
 - ```fact(0)``` est appelé.
 - Le programme vérifie si ```n === 0```. C'est vrai, donc il retourne ```1```.
+
+
+#### Retour des appels récursifs
+
+Maintenant que le cas de base est atteint, chaque appel récursif précédent se résout :
+
+##### Résolution du quatrième appel récursif :
+
+```fact(1)``` retourne ```1 * 1 = 1```.
+
+
+##### Résolution du troisième appel récursif :
+
+```fact(2)``` retourne ```2 * 1 = 2```.
+
+
+##### Résolution du deuxième appel récursif :
+
+```fact(3)``` retourne ```3 * 2 = 6```.
+
+
+##### Résolution du premier appel récursif :
+
+```fact(4)``` retourne ```4 * 6 = 24```.
+
+
+##### Résolution de l'appel initial :
+
+```fact(5)``` retourne ```5 * 24 = 120```.
+
+
+#### Illustration des étapes de la récursion : 
+
+```
+fact(5)
+5 * fact(4)
+    4 * fact(3)
+        3 * fact(2)
+            2 * fact(1)
+                1 * fact(0)
+                    1
+```
+
+#### Diagramme de la Pile d'Exécution
+
+À chaque appel récursif, une nouvelle entrée est ajoutée à la pile d'exécution. Une fois le cas de base atteint, la pile commence à se dépiler :
+
+```
+Empilement :                                  Dépilement :
+
+fact(5)                                       fact(5)
+5 * fact(4)                                   5 * 24 = 120
+4 * fact(3)                                   4 * 6 = 24
+3 * fact(2)                                   3 * 2 = 6
+2 * fact(1)                                   2 * 1 = 2
+1 * fact(0)                                   1
+1
+```
+
+En résumant :
+
+- **Empilement :** Chaque appel récursif ajoute une nouvelle entrée à la pile d'exécution.
+- **Dépilement :** Une fois le cas de base atteint, les appels commencent à se résoudre et à se dépiler.
