@@ -31,6 +31,8 @@
 
 ## Diagramme
 
+**Attention :** left, right & mid désignent un index dans le tableau et non une valeur !
+
 ```
 Initial Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 Target: 7
