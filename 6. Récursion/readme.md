@@ -40,7 +40,7 @@ console.log(fact(5)); // Affiche 120
 ##### Appel initial :
 
 - fact(5) est appelé.
-- Le programme vérifie si n === 0. Ce n'est pas le cas, donc il passe à return 5 * fact(4).
+- Le programme vérifie si ```n === 0```. Ce n'est pas le cas, donc il passe à ```return 5 * fact(4)```.
 
 
 ##### Premier appel récursif :
